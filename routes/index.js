@@ -10,7 +10,7 @@ router.get('/', function(req, res, next){
 	//stats.get('/memory', function(err, result){
 		//res.send(result);
 	//});
-	res.send(result);
+	res.sendFile("../views/index.html");
 });
 
 module.exports = router;
