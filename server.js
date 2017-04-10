@@ -4,7 +4,8 @@ var app            = express();
 var mongoose       = require('mongoose');
 var bodyParser     = require('body-parser');
 var methodOverride = require('method-override');
-
+var http 		   = require('http');
+var async = require('async');
 // configuration ===========================================
 	
 // config files
@@ -29,9 +30,11 @@ app.use('/usage', api);
 
 
 // routes ==================================================
-require('./app/routes')(app); // pass our application into our routes
+require('./app/routes')(app); // pass our application into our routes'
+
 
 // start app ===============================================
+
 app.listen(port);	
 console.log('Magic happens on port ' + port); 			// shoutout to the user
 exports = module.exports = app; 						// expose app

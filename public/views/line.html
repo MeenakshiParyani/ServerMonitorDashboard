@@ -4,7 +4,7 @@
 		<label><input type="radio" name="mode" value="MemoryUsage"> Memory Usage</label>
 		<label><input type="radio" name="mode" value="CPUUsage" checked> CPU Usage</label>
 	</form>
-	<div id="memoryLineChart" ng-app='sampleApp' ng-controller="LineController"><svg width="960" height="500"></svg></div>
+	<div id="memoryLineChart" ng-app='sampleApp' ng-controller="LineController" data="exampleData"><svg width="960" height="500"></svg></div>
 	<!--<p><div ng-app='sampleApp'>
             <nvd3-line-chart
                 data="exampleData"
