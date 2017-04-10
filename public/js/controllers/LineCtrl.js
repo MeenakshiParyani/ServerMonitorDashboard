@@ -23,7 +23,7 @@ angular.module('LineCtrl', []).controller('LineController', function($scope) {
 	/* Done setting the chart up? Time to render it!*/
 
 
-    d3.select('#chart svg')    //Select the <svg> element you want to render the chart in.   
+    d3.select('#memoryLineChart svg')    //Select the <svg> element you want to render the chart in.   
       .datum($scope.exampleData)         //Populate the <svg> element with chart data...
       .call(chart);          //Finally, render the chart!
 
