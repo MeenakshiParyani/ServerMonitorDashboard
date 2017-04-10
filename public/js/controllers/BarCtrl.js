@@ -2,23 +2,23 @@ angular.module('BarCtrl', []).controller('BarController', function($scope) {
 	$scope.exampleData = 	
 [
   {
-    key: "S1",
+    key: "Network In",
     color: "#51A351",
     values:
     [      
       { x : "A", y : 40 },
       { x : "B", y : 30 },
-      { x : 5,   y : 20 }  
+      { x : "c",   y : 20 }  
     ]
   },
   {
-    key: "S2",
+    key: "Network Out",
     color: "#BD362F",
     values:
     [      
       { x : "A", y : 60 },
       { x : "B", y : 50 },
-      { x : 5,   y : 70 } 
+      { x : "c",   y : 70 } 
     ]
   }
 ];
